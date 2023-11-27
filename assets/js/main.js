@@ -28,8 +28,9 @@ async function calcular() {
         resultado.innerHTML = `${valorEuro.toFixed(2)} EUR`;
         renderGraficaEuro()
 
-      } else resultado.innerHTML = "Selecciona una moneda";
-
+      } else 
+        resultado.innerHTML = "Selecciona una moneda";
+        grafico.destroy()
       console.log(dolar, euro);
     });
   } catch (e) {
